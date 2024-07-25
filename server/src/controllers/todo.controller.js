@@ -21,12 +21,12 @@ const todoController = {
     },
 
     postTodo: [
-        // Validation middleware
+       
         body('title').notEmpty().withMessage('Title is required'),
         body('description').notEmpty().withMessage('Description is required'),
         body('user').notEmpty().withMessage('User is required'),
 
-        // Handle validation errors
+       
         (req, res, next) => {
             const errors = validationResult(req);
             if (!errors.isEmpty()) {
@@ -35,7 +35,7 @@ const todoController = {
             next();
         },
 
-        // Controller logic
+       
         async (req, res) => {
             try {
                 const Todo = await todoModel.create(req.body);
