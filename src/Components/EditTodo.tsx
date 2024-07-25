@@ -5,8 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { ThunkDispatch } from 'redux-thunk'
 import { AnyAction } from 'redux'
-import { EditTodoPayload, RouteParams } from '../Redux/app/types'
-import { getSingleTodo, getTodo, patchTodo } from '../Redux/app/action'
+import { EditTodoPayload } from '../Redux/app/types'
+import { getSingleTodo, patchTodo } from '../Redux/app/action'
 import { PulseLoader } from 'react-spinners'
 const EditTodo = () => {
     const { id } = useParams();
@@ -28,7 +28,7 @@ const EditTodo = () => {
         .then(res=>{
             setFromData(res?.payload?.Todo)
         })
-    },[id])
+    },[id, dispatch])
 
     const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
        const {name,value} =e.target;
