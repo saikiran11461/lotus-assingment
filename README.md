@@ -1,47 +1,66 @@
-# Getting Started with Create React App
+# Lotus Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+
+This project is a full-stack application with a React frontend and an Express backend. It utilizes various technologies to provide a robust and scalable solution.
+
+## Getting Started
+
+### Frontend
+
+The frontend is built using React, TypeScript, HTML, CSS, and JavaScript. It handles the user interface and interactions.
+
+1. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
+
+2. **Start the development server**:
+    ```bash
+    npm run start
+    ```
+    The frontend will be served at [http://localhost:3000](http://localhost:3000). The page will automatically reload if you make edits, and any lint errors will be shown in the console.
+
+### Backend
+
+The backend is built using Node.js, Express, MongoDB, and JWT. It provides the API and handles server-side logic.
+
+1. **Navigate to the server directory**:
+    ```bash
+    cd server
+    ```
+
+2. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Start the server**:
+    ```bash
+    npm start
+    ```
+    The server will be running on [http://localhost:2345](http://localhost:2345).
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, React, TypeScript
+- **Backend**: Node.js, Express, MongoDB, JWT
+- **State Management**: Redux (for the frontend)
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the frontend directory, you can run:
 
-### `npm start`
+- **`npm run start`**: Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **`npm run build`**: Builds the app for production to the `build` folder.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **`npm run eject`**: Removes the single build dependency and gives full control over configuration files.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To learn more about Create React App, visit the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# lotus-assingment
+- To learn React, check out the [React documentation](https://reactjs.org/).
+
+- For information on Express, MongoDB, and other backend technologies, refer to their respective documentation.
