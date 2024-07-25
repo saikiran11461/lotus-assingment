@@ -35,8 +35,8 @@ const TodoTable = () => {
   const loading = useSelector((store: any) => store.appReducer.isLoading)
   const [refresh, setRefresh] = useState<string>("");
 
-  const { isOpen, onOpen, onClose } = useDisclosure(); // Modal controls
-  const [selectedTodo, setSelectedTodo] = useState<TodoItem | null>(null); // State to hold the selected todo
+  const { isOpen, onOpen, onClose } = useDisclosure(); 
+  const [selectedTodo, setSelectedTodo] = useState<TodoItem | null>(null); 
 
   useEffect(() => {
     dispatch(getTodo());
@@ -50,8 +50,8 @@ const TodoTable = () => {
   };
 
   const viewHandler = (todo: TodoItem) => {
-    setSelectedTodo(todo); // Set the selected todo
-    onOpen(); // Open the modal
+    setSelectedTodo(todo); 
+    onOpen(); 
   };
 
   const filteredTodos = todos?.filter(

@@ -46,7 +46,7 @@ const Register = () => {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length > 0) {
-            return; // Prevent form submission if there are validation errors
+            return; 
         }
 
         dispatch(postRegister(formData))
