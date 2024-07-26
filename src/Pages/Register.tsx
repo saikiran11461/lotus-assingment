@@ -6,10 +6,11 @@ import { postRegister } from '../Redux/auth/action';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
 import { FormData } from '../Redux/auth/types';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const dispatch: ThunkDispatch<{}, {}, AnyAction> = useDispatch();
-
+    const navigate = useNavigate()
     const init: FormData = {
         name: "",
         email: "",
@@ -54,7 +55,13 @@ const Register = () => {
                 if (res?.payload?.response?.data?.message === 'user already exist') {
                     setErrorResponse(res?.payload?.response?.data?.message);
                 }
+                if (res?.payload?.message === "Sign up successful") {
+                  
+                    navigate("/");
+                }
+
             });
+
     };
 
     return (
