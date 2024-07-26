@@ -21,7 +21,6 @@ const Navbar = () => {
             <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
                 <Box><Heading color={theme.colors.teal}>TodoApp</Heading></Box>
                 <Box display={"flex"}>
-                    <Link  to={"/addTodo"}><Button bgColor={theme.colors.teal}mr={"10px"} display={auth === true ? "block":"none"} color={"white"}>AddTodo</Button></Link>
                     <Link to={"/register"}><Button display={auth === true ? "none":"block"} mr={"10px"} color={theme.colors.teal} p={"12px 30px"}>Register</Button></Link>
                     {
                       auth ?  <Button onClick={handleLogout} color={theme.colors.teal} p={"12px 30px"}>LogOut</Button>: <Link to={"/login"}><Button color={theme.colors.teal} p={"12px 30px"}>Login</Button></Link>
